@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def evaluate(input)
   stack = []
 
@@ -14,7 +12,7 @@ def evaluate(input)
     end
   end
 
-  return stack.last.round(4)
+  stack.pop.round(4)
 end
 
 puts evaluate('19 2.14 + 4.5 2 4.3 / - *')
